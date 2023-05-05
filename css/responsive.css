@@ -1,0 +1,103 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+/**************************/
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .sign-up-div {
+    width: 55rem;
+    height: 55rem;
+  }
+  .above-div {
+    width: 55rem;
+  }
+  .div2 {
+    margin-top: 2rem;
+  }
+}
+
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+  .sign-up-div {
+    width: 50rem;
+    height: 55rem;
+  }
+  .above-div {
+    width: 50rem;
+  }
+  .main-div {
+    grid-template-columns: 40rem auto;
+  }
+  h1,
+  p {
+    padding-left: 4rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  input,
+  button {
+    width: 40rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+    overflow: auto;
+  }
+  body {
+    overflow: auto;
+  }
+  .main-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .sign-up-div,
+  .above-div {
+    width: 35rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 2.5rem;
+  }
+  p,
+  h2 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    padding: 2rem 2.8rem;
+  }
+
+  input,
+  button {
+    width: 30rem;
+  }
+  .terms,
+  ::placeholder {
+    font-size: 1rem;
+  }
+}

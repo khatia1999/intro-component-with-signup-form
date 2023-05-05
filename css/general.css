@@ -1,0 +1,42 @@
+/*This reset gives us more flexibility*/
+/* variables */
+/* font, root font size */
+:root {
+  /* color palette */
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --DarkBlue: hsl(249, 10%, 26%);
+  --GrayishBlue: hsl(246, 25%, 77%);
+  --DarkGray: #3d3b48;
+  --LightGray: #dedede;
+  --DarkGreen: #33b97e;
+  --White: #fff;
+
+  box-sizing: border-box;
+  /* root font size */
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--Red);
+  background-image: url(/images/bg-intro-desktop.png);
+}
+
+a {
+  text-decoration: none;
+}

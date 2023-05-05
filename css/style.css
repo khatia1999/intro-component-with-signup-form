@@ -1,0 +1,104 @@
+.main-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+h1 {
+  color: var(--White);
+  font-size: 6rem;
+  padding-left: 4rem;
+}
+
+p {
+  color: var(--White);
+  font-size: 2rem;
+  padding-left: 4rem;
+}
+
+.above-div {
+  width: 60rem;
+  height: 6rem;
+  background-color: var(--Blue);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    -50px -6px 9px -7px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, -50px -6px 9px -7px rgba(0, 0, 0, 0);
+}
+
+.div2 {
+  margin-top: 6rem;
+}
+
+h2 {
+  color: var(--White);
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 2rem 8.5rem;
+}
+span {
+  font-weight: lighter;
+  z-index: 1;
+}
+
+/*sign up form*/
+.sign-up-div {
+  background-color: var(--White);
+  width: 60rem;
+  height: 50rem;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+input {
+  width: 50rem;
+  height: 5.8rem;
+  border-radius: 0.5rem;
+  border: 0.1px solid grey opacity 0.5;
+  padding: 2rem 3rem;
+  margin-bottom: 3rem;
+}
+
+::placeholder {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  opacity: 0.4;
+}
+
+button {
+  width: 50rem;
+  height: 5.8rem;
+  border-radius: 0.5rem;
+  background-color: var(--DarkGreen);
+  color: var(--White);
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--Green);
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.terms {
+  color: #000000;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  opacity: 0.5;
+}
+
+a {
+  color: red;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
